@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>de.e2n</groupId>
+    <artifactId>cdk-constructs</artifactId>
+    <version>1.0.0</version>
+    <packaging>jar</packaging>
+
+    <name>${project.groupId}:${project.artifactId}</name>
+    <description>CDK Constructs</description>
+    <url>https://github.com/E2N-development/e2n-cdk-constructs</url>
+
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>https://opensource.org/license/mit</url>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <name>Annika Hausmann</name>
+            <email>hausmann@e2n.de</email>
+            <organization>e2n</organization>
+            <organizationUrl>https://e2n.de</organizationUrl>
+        </developer>
+        <developer>
+            <name>Robert Manig</name>
+            <email>manig@e2n.de</email>
+            <organization>e2n</organization>
+            <organizationUrl>https://e2n.de</organizationUrl>
+        </developer>
+    </developers>
+
+    <scm>
+        <connection>scm:git:git://github.com/E2N-development/e2n-cdk-constructs.git</connection>
+        <developerConnection>scm:git:ssh://github.com:E2N-development/e2n-cdk-constructs.git</developerConnection>
+        <url>https://github.com/E2N-development/e2n-cdk-constructs/tree/main</url>
+    </scm>
+
+    <properties>
+        <maven.compiler.source>21</maven.compiler.source>
+        <maven.compiler.target>21</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.resources.sourceEncoding>UTF-8</project.resources.sourceEncoding>
+        <cdk.lib.version>2.234.1</cdk.lib.version>
+        <cdk.constructs.version>10.4.4</cdk.constructs.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>software.amazon.awscdk</groupId>
+                <artifactId>aws-cdk-lib</artifactId>
+                <version>${cdk.lib.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>software.constructs</groupId>
+                <artifactId>constructs</artifactId>
+                <version>${cdk.constructs.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <dependencies>
+        <dependency>
+            <groupId>software.amazon.awscdk</groupId>
+            <artifactId>aws-cdk-lib</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>software.constructs</groupId>
+            <artifactId>constructs</artifactId>
+        </dependency>
+    </dependencies>
+
+</project>
