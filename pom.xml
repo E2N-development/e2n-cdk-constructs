@@ -41,6 +41,15 @@
         <url>https://github.com/E2N-development/e2n-cdk-constructs/tree/main</url>
     </scm>
 
+    <distributionManagement>
+        <repository>
+            <uniqueVersion>false</uniqueVersion>
+            <id>github</id>
+            <name>e2n-cdk-constructs</name>
+            <url>https://github.com/E2N-development/e2n-cdk-constructs</url>
+        </repository>
+    </distributionManagement>
+
     <properties>
         <maven.compiler.source>21</maven.compiler.source>
         <maven.compiler.target>21</maven.compiler.target>
